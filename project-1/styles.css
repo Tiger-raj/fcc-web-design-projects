@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  /* background-image: url(survey-form-background.jpeg); */
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1,
+p {
+  margin: 0 auto 0.5rem auto;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  /* font-family: "Poppins", sans-serif; */
+}
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.head-section,
+.form-section {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 700px;
+  min-width: 300px;
+  box-sizing: border-box;
+  padding: 2em;
+  /* border: 2px solid green; */
+}
+
+form {
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0 0 1.5em 0;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: 400;
+  padding: 4px 0 0 0;
+  /* padding: px; */
+}
+
+label,
+legend {
+  font-size: 1.05em;
+}
+
+input,
+select,
+textarea {
+  /* box-sizing: border-box; */
+  width: 100%;
+  display: block;
+  min-height: 2rem;
+  box-sizing: border-box;
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: unset;
+  width: 4.5%;
+  vertical-align: middle;
+  margin: 0 0.5em 0 0;
+  display: inline;
+}
+
+.recommendation {
+  margin: 2rem 0;
+}
+.form-section {
+  /* border: 2px solid red; */
+  /* padding: 2em; */
+  color: #ffffff;
+  background-color: #292a4adf;
+  border-radius: 5px;
+  /* opacity: 90%; */
+  /* margin: 2em; */
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto;
+  height: 2.5em;
+  font-size: 1.1rem;
+  background-color: green;
+  border-color: green;
+  color: #ffffff;
+  min-width: 300px;
+  border: none;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FCC Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="head-section">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </section>
+      <section class="form-section">
+        <form id="survey-form" method="post" action="#">
+          <fieldset>
+            <label for="name" id="name-label"> Name <input type="text" id="name" placeholder="Enter your name" name="name" required /> </label>
+            <label for="email" id="email-label"> Email <input type="email" id="email" name="email" placeholder="Enter your Email" required /> </label>
+            <label for="number" id="number-label"> Age (optional) <input type="number" id="number" name="age" min="10" max="99" placeholder="Age" required /> </label>
+          </fieldset>
+          <fieldset>
+            <label for="dropdown"
+              >Which option best describes your current role?
+              <select id="dropdown" name="dropdown">
+                <option value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="ft-job">Full Time Job</option>
+                <option value="ft-learner">Full Time Learner</option>
+                <option value="no-ans">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label class="recommendation"
+              >Would you recommend freeCodeCamp to a friend? <label><input type="radio" name="recommend" value="definitely" checked />Definitely</label> <label> <input type="radio" name="recommend" value="maybe" />Maybe</label><label><input type="radio" name="recommend" value="not sure" />Not Sure</label>
+            </label>
+
+            <label for="feature"
+              >What is your favorite feature of freeCodeCamp?
+              <select id="feature">
+                <option value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="project">Project</option>
+                <option value="community">Community</option>
+                <option value="open source">Open Source</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>What would you like to se improved? (Check all that apply)</legend>
+            <label for="front-end"><input type="checkbox" id="front-end" value="front-end-projects" /> Front-end Projects</label>
+            <label for="back-end"><input type="checkbox" id="back-end" value="back-end-projects" /> Back-end Projects</label>
+            <label for="data-visualization"><input type="checkbox" id="data-visualization" value="data-visualization" /> Data Visualization</label>
+            <label for="challenges"><input type="checkbox" id="challenges" value="challenges" /> Challenges</label>
+            <label for="open-source"><input type="checkbox" id="open-source" value="open-source-community" /> Front-end Open Source Community</label>
+            <label for="gitter-help"><input type="checkbox" id="gitter-help" value="gitter-help-rooms" /> Gitter help rooms</label>
+            <label for="videos"><input type="checkbox" id="videos" value="videos" /> Videos</label>
+            <label for="meetups"><input type="checkbox" id="meetups" value="meetups" /> City Meetups</label>
+            <label for="wiki"><input type="checkbox" id="wiki" value="wiki" /> Wiki</label>
+            <label for="forum"><input type="checkbox" id="forum" value="forum" /> Forum</label>
+            <label for="additional"><input type="checkbox" id="additional" value="additional-courses" /> Additional Courses</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Any comments or suggestions?</legend>
+            <textarea name="comments" rows="5" cols="40" placeholder="Enter your comments here..."></textarea>
+          </fieldset>
+
+          <input id="submit" type="submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
